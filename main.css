@@ -1,0 +1,248 @@
+*{margin:0px;padding:0px;}
+
+body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height: 100vh;
+    width:100%;
+    background-color:#f2f2f2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size:40px;
+    color:#cc0066;
+    letter-spacing:10px;
+    padding:30px 0px 0px 0px;
+}
+
+.delete-btn{
+    position: relative;
+    margin-left:30px;
+    font-family: 'FontAwesome';
+    background: #dc143c;outline:none;border:none;
+    height:30px; width:30px; border-radius:50%;
+    color:#fff;
+    padding: 8px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight:500;
+}
+
+.add-button{
+    font-family: 'FontAwesome';
+    text-align:center;
+    position:fixed;
+    bottom:0;
+    right:0;
+    font-size:60px;
+    background-color:#ff0080;
+    color:#fff; 
+    padding:15px;
+    height:60px; width:60px; border-radius:50%;
+    margin:50px;
+    cursor: pointer;
+    opacity:0.8;
+}
+
+button:hover{
+    opacity:1.0;
+}
+
+.detail{
+    background: #fff;
+    display: flex;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.07);
+    padding:10px;
+    border-radius:6px;
+    margin:30px 0;
+    width:100%;
+    cursor: pointer;
+    display: flex;
+    font-size:25px;
+    color:#333333;
+}
+
+img{
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height:200px;
+    width:200px;
+    border-radius:50%;
+}
+
+.wrapper h1{
+    font-size:30px;
+    font-family:sans-serif;
+    color:#2988bc;
+    letter-spacing:5px;
+    padding:10px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+input[type='text']{
+    margin:15px;
+    padding:10px 50px;
+    width:400px;
+    height:50px;
+    letter-spacing:2px;
+    font-size:15px;
+    border-radius:3px;
+    box-sizing:border-box;
+    border: none;
+    outline:none;
+    border-bottom:1px solid #808080;
+}
+.box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px, rgba(0, 0, 0, 0.2) 0px 2px 3px;    
+}
+.button{
+    padding: 10px 6px;
+    margin: 5px;
+    min-width:190px;
+    max-width: auto !important;
+    border:none;
+    background:#2988bc;
+    border-radius: 2px;
+    outline: none;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.save-button{
+    background:#009900;
+    opacity:0.8;
+}
+
+.discard-button{
+    background:#dc143c;
+    opacity:0.8;
+}
+
+.save-button:hover, .discard-button:hover{
+    opacity:1.0;
+} 
+
+.edit-button{
+    padding: 10px 6px;
+    min-width:100px;
+    margin:30px 10px 30px 280px;
+    max-width: auto !important;
+    border:none;
+    background:#2988bc;
+    border-radius: 2px;
+    outline: none;
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    background:#009900;
+    opacity:0.8;
+}
+
+.close-button{
+    padding: 10px 6px;
+    min-width:100px;
+    margin:30px 10px;
+    max-width: auto !important;
+    border:none;
+    background:#2988bc;
+    border-radius: 2px;
+    outline: none;
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    background:#dc143c;
+    opacity:0.8;
+}
+
+.edit-button:hover, .close-button:hover{
+    opacity:1.0;
+} 
+
+.button_holder{
+    display: flex;
+    flex-flow: row nowrap;
+}
+input[type='file']{
+    display: none;
+}
+
+.display-contact-wrapper{
+    line-height: 27px;
+}
+
+label {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    background: #DFDBDB;
+    height:200px;
+    width:200px;
+    margin-top:15px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.hide {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+span.cam {
+    font-family: 'FontAwesome';
+    display: flex;
+    align-content: center;
+    color: #f2f2f2;
+    font-size: 35px;
+    line-height: 50px;
+}
+.wrapper{
+    position: fixed;
+    background: #f2f2f2;
+    width:100%;
+    z-index:999;
+    height:100%;
+    visibility: hidden;
+}
+
+.wrapper-show{
+    visibility: visible;
+}
+.center{
+    margin: 0 auto;
+    max-width:800px;
+    text-align: center
+}
+
+.contact-image{
+        height:150px;
+        width:150px;
+        margin:20px;
+        border-radius:50%;
+        position: relative;
+}
+
+.name, .phone-number, .email{
+    font-size:30px;
+    padding:20px;
+    color:#4d4d4d;
+}

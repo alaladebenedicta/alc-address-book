@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Address Book</title>
+        <meta charset="utf-8">
+        <meta name="describtion" content="address book">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="font/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <h2>CONTACTS</h2>
+
+            <div class="contact-lists">
+
+            </div>
+
+            <div class="new-contact-wrapper wrapper">
+                <div class="center">
+                    <h1><span class="heading">CREATE</span> CONTACT</h1>
+                    <form method="GET" action="index.html" enctype="multipart/form-data" class="form">
+                        <div>
+                            <label for="image">
+                                <span id="icon" class="cam fa-camera"></span>
+                                <img id="img-holder" class="box-shadow hide" src="" alt="image">                        
+                            </label>
+                            <input name="img" id="image" type="file">
+                        </div>
+                        <input class="box-shadow input" type="text" name="firstname" placeholder="First name" required>
+                        <input class="box-shadow input" type="text" name="lastname" placeholder="Last name" required>
+                        <input class="box-shadow input" type="text" name="email" placeholder="Email" required>
+                        <input class="box-shadow input" type="text" name="phone_number" placeholder="Phone number" required>
+                        <div class="button_holder">
+                            <a class="button box-shadow discard-button" href="#">Discard</a>
+                            <input value="Save" type="submit"  class="button box-shadow save-button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="display-contact-wrapper wrapper">
+                <div class="center">
+                    <h1>CONTACT DETAILS</h1>
+                    <img src="images/" class="contact-image">
+                    <h4 class="name"> Alalade Benedicta</h4>
+                    <p class="phone-number"> 09039121087</p>
+                    <p class="email">akinayodeji4all@gmail.com</p>
+                    <div class="button_holder">
+                        <a class="button box-shadow edit-button" href="#">Edit</a>
+                        <a class="button box-shadow close-button" href="#" >Close</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#"><span class="add-contact add-button fa-plus"></span></a>
+
+        <script type="text/javascript" src="main.js"></script>
+
+    </body>
+
+</html>
